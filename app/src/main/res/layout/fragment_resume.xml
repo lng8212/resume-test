@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/test" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_resume"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:text="KIEU DUC LONG" />
+
+            <TextView
+                android:id="@+id/txt_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                tools:text="Van Quan, Ha Dong, Ha Noi" />
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                tools:text="Ha Noi" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                tools:text="01234567" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                tools:text="abc@gmail.com" />
+
+            <TextView
+                android:id="@+id/txt_additionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                tools:text="Here you can find IELTS Writing Samples (both General and Academic) and answers to them. The materials are provided by experienced IELTS tutors or gathered from the best free IELTS preparation resources. All samples are constantly being renewed and correspond to the real exam sections." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:text="PROFESSTIONAL EXPERIENCE"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:letterSpacing="0.2"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="FPT"/>
+            <TextView
+                android:id="@+id/txt_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="HR"/>
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginHorizontal="8dp"
+                tools:text="Fix bug"/>
+
+            <TextView
+                android:text="EDUCATION"
+                android:layout_width="match_parent"
+                android:paddingTop="8dp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:letterSpacing="0.2"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="PTIT"/>
+            <TextView
+                android:id="@+id/txt_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="Information Technology"/>
+
+            <TextView
+                android:id="@+id/txt_additionalInfoEdu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="abc"/>
+
+            <TextView
+                android:text="ADDTIONAL SKILL"
+                android:layout_width="match_parent"
+                android:paddingTop="8dp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:letterSpacing="0.2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_additionalSkill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                tools:text="abc"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to PDF" />
+</LinearLayout>
